@@ -368,6 +368,13 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+.social-link-our-team {
+  display: inline-block;
+  margin-top: 16px;
+  width: 206px;
+  height: 44px;
+  background-image: url(../images/social-links.svg);
+}
 
 .our-regulars-clients {
   display: flex;
