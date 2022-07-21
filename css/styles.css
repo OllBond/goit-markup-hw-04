@@ -525,6 +525,14 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 20px;
 }
+
 .social-link-footer {
+  display: inline-block;
+  width: 206px;
+  height: 80px;
+  background-image: url(../images/social-links.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
