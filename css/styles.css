@@ -515,3 +515,16 @@ img {
 .link-tel-footer-contacts:focus {
   color: var(--accent-text-color);
 }
+.join-title-footer {
+  color: var(--background-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.social-link-footer {
+}
