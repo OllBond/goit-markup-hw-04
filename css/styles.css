@@ -166,6 +166,19 @@ img {
 .link-tel-header-contacts {
   color: var(--primary-text-color);
 }
+.item::before {
+  display: block;
+  content: '';
+}
+
+.icon-email-header::before {
+  background-image: url(../images/envelope.svg);
+  background-size: 16px;
+}
+.icon-phone-header::before {
+  background-image: url(../images/smartphone.svg);
+  background-size: 10px;
+}
 /* ===========================Main content==================================*/
 /* ===========================Hero =========================================*/
 .hero {
@@ -354,6 +367,56 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.our-regulars-clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.regular-clients-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.regular-clients-list::after {
+  display: block;
+  content: '';
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 106px;
+}
+.icon-client-one::after {
+  background-image: url(../images/logo-one-client.svg);
+}
+.icon-client-two::after {
+  background-image: url(../images/logo-two-client.svg);
+}
+.icon-client-three::after {
+  background-image: url(../images/logo-three-client.svg);
+}
+.icon-client-four::after {
+  background-image: url(../images/logo-four-client.svg);
+}
+.icon-client-five::after {
+  background-image: url(../images/logo-five-client.svg);
+}
+.icon-client-six::after {
+  background-image: url(../images/logo-six-client.svg);
 }
 /* ==============================Button============================*/
 
