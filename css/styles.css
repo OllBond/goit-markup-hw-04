@@ -166,19 +166,19 @@ img {
 .link-tel-header-contacts {
   color: var(--primary-text-color);
 }
-.item::before {
+/* .item::before {
   display: block;
   content: '';
-}
+} */
 
-.icon-email-header::before {
+/* .icon-email-header::before {
   background-image: url(../images/envelope.svg);
   background-size: 16px;
 }
 .icon-phone-header::before {
   background-image: url(../images/smartphone.svg);
   background-size: 10px;
-}
+} */
 /* ===========================Main content==================================*/
 /* ===========================Hero =========================================*/
 .hero {
@@ -247,20 +247,22 @@ img {
 }
 .our-benefits-icons {
   display: block;
-  content: '';
+  width: 270px;
   height: 120px;
+  content: '';
 
   background-color: var(--background-color-btn);
   border-radius: 4px;
-
   margin-bottom: 30px;
   margin-right: 30px;
-
-  background-size: contain;
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
+.icons-benefits {
+  height: 70px;
+}
 /* .our-benefits-text::before {
   display: block;
   content: '';
@@ -276,16 +278,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 } */
-.icon-antenna {
-  width: 70px;
-  height: 70px;
-}
 
 /* .icon-antenna::before {
   background-image: url(../images/antenna.svg);
   background-size: 65.32px;
 } */
-.icon-clock::before {
+/* .icon-clock::before {
   background-image: url(../images/clock.svg);
   background-size: 66.96px;
 }
@@ -296,7 +294,7 @@ img {
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
   background-size: 54.83px;
-}
+} */
 
 .text {
   color: var(--primary-text-color);
@@ -304,6 +302,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .our-work-section {
   padding-top: 0px;
@@ -389,12 +388,34 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.social-link-our-team {
-  display: inline-block;
-  margin-top: 16px;
-  width: 206px;
+
+.social-link-our-team-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link-team {
+  display: flex;
+  width: 44px;
   height: 44px;
-  background-image: url(../images/social-links.svg);
+  justify-content: center;
+  align-items: center;
+}
+.icons-links-team {
+  width: 20px;
+  height: 20px;
+}
+
+.icons-links-team:hover,
+.icons-links-team:focus {
+  fill: var(--background-color);
+}
+.social-link-our-team-item:hover,
+.social-link-our-team-item:focus {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
 }
 
 .our-regulars-clients {
@@ -415,7 +436,7 @@ img {
   color: #212121;
 }
 
-.regular-clients-list::after {
+/* .regular-clients-list::after {
   display: block;
   content: '';
   width: 170px;
@@ -427,8 +448,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 106px;
-}
-.icon-client-one::after {
+} */
+/* .icon-client-one::after {
   background-image: url(../images/logo-one-client.svg);
 }
 .icon-client-two::after {
@@ -445,7 +466,7 @@ img {
 }
 .icon-client-six::after {
   background-image: url(../images/logo-six-client.svg);
-}
+} */
 /* ==============================Button============================*/
 
 .button-order {
@@ -549,11 +570,11 @@ img {
   margin-bottom: 20px;
 }
 
-.social-link-footer {
+/* .social-link-footer {
   display: inline-block;
   width: 206px;
   height: 80px;
   background-image: url(../images/social-links.svg);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
