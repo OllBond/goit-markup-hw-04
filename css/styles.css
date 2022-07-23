@@ -78,6 +78,9 @@ img {
 .container-contacts {
   display: flex;
 }
+/* .container-footer {
+  display: flex;
+} */
 
 .list {
   list-style: none;
@@ -250,7 +253,6 @@ img {
   display: block;
   width: 270px;
   height: 120px;
-  content: '';
 
   background-color: var(--background-color-btn);
   border-radius: 4px;
@@ -402,8 +404,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 }
 
 .icons-links-team {
@@ -423,7 +423,6 @@ img {
 
 .our-regulars-clients {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
 }
@@ -437,6 +436,39 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+/* .regular-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--background-color-main);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+} */
+.our-clients-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  gap: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icons-regular-clients {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.our-clients-container .icons-regular-clients:hover,
+.our-clients-container .icons-regular-clients:focus {
+  fill: var(--accent-text-color);
+}
+.our-clients-container:hover,
+.our-clients-container:focus {
+  border: 1px solid var(--accent-text-color);
 }
 
 /* .regular-clients-list::after {
@@ -455,21 +487,6 @@ img {
 /* .icon-client-one::after {
   background-image: url(../images/logo-one-client.svg);
 }
-.icon-client-two::after {
-  background-image: url(../images/logo-two-client.svg);
-}
-.icon-client-three::after {
-  background-image: url(../images/logo-three-client.svg);
-}
-.icon-client-four::after {
-  background-image: url(../images/logo-four-client.svg);
-}
-.icon-client-five::after {
-  background-image: url(../images/logo-five-client.svg);
-}
-.icon-client-six::after {
-  background-image: url(../images/logo-six-client.svg);
-} */
 /* ==============================Button============================*/
 
 .button-order {
@@ -505,6 +522,7 @@ img {
   color: var(--background-color);
 }
 /* ================================Footer============================== */
+
 .logo-footer {
   font-family: 'Raleway';
   font-weight: 700;
@@ -572,12 +590,16 @@ img {
   text-decoration: none;
   margin-bottom: 20px;
 }
-
-/* .social-link-footer {
-  display: inline-block;
+.social-link-team-footer {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.icons-links-team-footer {
+  fill: var(--background-color);
+}
+.join-social-links {
+  display: block;
   width: 206px;
   height: 80px;
-  background-image: url(../images/social-links.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
+  margin-right: 70px;
+}
