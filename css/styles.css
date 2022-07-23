@@ -140,6 +140,15 @@ img {
   text-decoration: none;
   letter-spacing: 0.02em;
 }
+.icon-contacts-header {
+  width: 16px;
+  height: 12px;
+}
+.icon-contacts-header:hover,
+.icon-contacts-header:focus {
+  fill: currentColor;
+  cursor: pointer;
+}
 .site-nav .site-nav-link {
   color: var(--title-text-color);
 }
@@ -250,17 +259,15 @@ img {
   width: 270px;
 }
 .our-benefits-icons {
-  display: block;
+  display: flex;
   width: 270px;
   height: 120px;
-
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-color-btn);
   border-radius: 4px;
+  gap: 30px;
   margin-bottom: 30px;
-  margin-right: 30px;
-  /* background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 .icons-benefits {
@@ -404,6 +411,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .icons-links-team {
@@ -456,6 +464,7 @@ img {
   gap: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  cursor: pointer;
 }
 .icons-regular-clients {
   width: 106px;
