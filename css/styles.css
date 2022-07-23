@@ -141,6 +141,7 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 .icon-contacts-header:hover,
 .icon-contacts-header:focus {
