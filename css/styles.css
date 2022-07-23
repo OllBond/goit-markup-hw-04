@@ -12,6 +12,7 @@
   --color-portfolio-projects: #eeeeee;
   --background-color-main: #e5e5e5;
   --backround-color-hero: #c4c4c4;
+  --bgc-social-icons: #afb1b8;
 }
 /* ========================Body============================== */
 
@@ -396,26 +397,28 @@ img {
 }
 .social-link-team {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
 }
+
 .icons-links-team {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
+}
+.social-link-team:hover,
+.social-link-team:focus {
+  background-color: var(--accent-text-color);
 }
 
-.icons-links-team:hover,
-.icons-links-team:focus {
+.social-link-team:hover .icons-links-team,
+.social-link-team:focus .icons-links-team {
   fill: var(--background-color);
-}
-.social-link-our-team-item:hover,
-.social-link-our-team-item:focus {
-  display: flex;
-  align-items: center;
-  background-color: var(--accent-text-color);
-  border-radius: 50%;
 }
 
 .our-regulars-clients {
