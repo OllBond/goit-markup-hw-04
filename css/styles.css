@@ -126,7 +126,8 @@ img {
 }
 .site-nav a,
 .our-contacts a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -138,10 +139,8 @@ img {
   letter-spacing: 0.02em;
 }
 .icon-contacts-header {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 .icon-contacts-header:hover,
 .icon-contacts-header:focus {
