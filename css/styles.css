@@ -37,7 +37,7 @@ p {
 img {
   display: block;
   max-width: 100%;
-  height: avto;
+  height: auto;
 }
 .address {
   font-style: normal;
@@ -390,15 +390,15 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* .our-progects-pictures {
-  flex-basis: calc((100% - 180px) / 3);
-} */
+.our-progects-pictures {
+  width: 370px;
+  height: 404px;
+}
 
 .our-progects-pictures:hover,
 .our-progects-pictures:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
 
 .our-progects-pictures-wrapper {
@@ -409,6 +409,14 @@ img {
   align-items: center;
   border: 1px solid var(--color-portfolio-projects);
   border-top: none;
+}
+.our-projects-link {
+  display: block;
+}
+.our-projects-link:hover,
+.our-projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .section-title-page-second {
@@ -456,7 +464,6 @@ img {
 .our-regulars-clients {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   gap: 30px;
 }
 
@@ -467,16 +474,10 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
-/* .social-link-our-team-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-} */
-
-.regular-clients-list {
+.regular-clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,15 +487,15 @@ img {
   cursor: pointer;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* gap: 30px; */
+  cursor: pointer;
 }
 
-.regular-clients-list:hover,
-.regular-clients-list:focus {
+.regular-clients-link:hover,
+.regular-clients-link:focus {
   color: var(--accent-text-color);
 }
-.regular-clients-list:hover,
-.regular-clients-list:focus {
+.regular-clients-link:hover,
+.regular-clients-link:focus {
   border: 1px solid var(--accent-text-color);
 }
 .icons-regular-clients {
@@ -561,7 +562,10 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ================================Footer============================== */
-
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .logo-footer {
   font-family: 'Raleway';
   font-weight: 700;
